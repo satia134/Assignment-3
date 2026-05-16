@@ -2,11 +2,11 @@
 
 ## Project Description
 This project is a multiple web page built with html, css and javascript.Its role is to provide students with clean interface to create,edit,and delete study task with each having couese code,date and notes.It also have a login system to control access and store data locally.On the home page there is an image slider and a real time tracker that displays date and time.
-## How to run and instal 
+## How to run and install 
 On this project that i created theres no installation but you can run by
 1. Download the repository.
 2. Extract the zip file.
-3. Ensure you have your folers in the file.
+3. Ensure you have your folders in the file.
 4. Open index.html in your browser.
 ## How to use
 ### Home page
