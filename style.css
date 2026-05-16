@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, 'Segoe UI', 'Arial', sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #1a2c3e;
+    line-height: 1.5;
+    transition: background 0.2s;
+}
+
+header {
+    background: linear-gradient(135deg, #0b2b44 0%, #1b78bb 100%);
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+}
+
+header h1 {
+    font-size: 1.9rem;
+    letter-spacing: -0.3px;
+    font-weight: 600;
+}
+
+nav {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 1.2rem;
+}
+
+nav a {
+    color: #f0f9ff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.3rem 0.7rem;
+    border-radius: 40px;
+    transition: background 0.2s;
+}
+
+nav a:hover {
+    background: #2c6288;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1.8rem 2rem;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 28px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    object-fit: cover;
+    transition: transform 0.2s;
+    aspect-ratio: 16/9;
+    background: #d9e2ec;
+}
+
+button, .btn-like {
+    background: #1e5a7a;
+    border: none;
+    padding: 0.6rem 1.4rem;
+    font-weight: 600;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+button:hover {
+    background: #0e3e58;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.card {
+    background: white;
+    border-radius: 24px;
+    padding: 1.6rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.03), 0 2px 6px rgba(0,0,0,0.05);
+    transition: box-shadow 0.2s;
+    border: 1px solid #e9eef3;
+}
+
+.card h2 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #0b3b4f;
+    border-left: 5px solid #1e5a7a;
+    padding-left: 1rem;
+}
+
+.grid-2col {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.grid-2col > * {
+    flex: 1;
+    min-width: 260px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px 14px;
+    margin: 8px 0 14px;
+    border: 1px solid #cbdae9;
+    border-radius: 18px;
+    font-size: 0.95rem;
+    background: #fefefe;
+    transition: 0.2s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #1e5a7a;
+    box-shadow: 0 0 0 3px rgba(30,90,122,0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
+    background: white;
+}
+
+th, td {
+    padding: 12px 10px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background: #eef3fc;
+    font-weight: 600;
+    color: #1a4b6e;
+}
+
+tr:hover td {
+    background-color: #f8fbfe;
+}
+
+.action-buttons button {
+    padding: 5px 12px;
+    margin: 0 4px;
+    font-size: 0.75rem;
+    background: #2c6e8f;
+}
+
+.action-buttons button:last-child {
+    background: #aa3e3e;
+}
+
+.action-buttons button:last-child:hover {
+    background: #8b2c2c;
+}
+
+.error-msg {
+    color: #c7362b;
+    font-size: 0.85rem;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.success-border {
+    border-left: 4px solid #1e7e34;
+}
+
+#dateTime {
+    text-align: center;
+    font-weight: 500;
+    background: #e9f0f5;
+    padding: 12px;
+    border-radius: 60px;
+    margin-top: 1rem;
+}
+
+pre {
+    background: #1e2a36;
+    color: #eef4ff;
+    padding: 1rem;
+    border-radius: 16px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    margin: 1rem 0;
+}
+
+hr {
+    margin: 1.2rem 0;
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, #cbd5e1, transparent);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #5a6e7c;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 700px) {
+    .container { padding: 1rem; }
+    th, td { font-size: 0.8rem; padding: 8px 5px; }
+    .card { padding: 1.2rem; }
+}
